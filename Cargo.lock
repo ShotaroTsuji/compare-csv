@@ -164,6 +164,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "compare-csv"
+version = "0.1.0"
+dependencies = [
+ "ansi_term 0.12.1",
+ "atty",
+ "chrono",
+ "color-eyre",
+ "csv",
+ "env_logger",
+ "eyre",
+ "log",
+ "rust_decimal",
+ "structopt",
+ "strum",
+ "strum_macros",
+ "thiserror",
+]
+
+[[package]]
 name = "csv"
 version = "1.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -183,25 +202,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b2466559f260f48ad25fe6317b3c8dac77b5bdb5763ac7d9d6103530663bc90"
 dependencies = [
  "memchr",
-]
-
-[[package]]
-name = "csvdiff"
-version = "0.1.0"
-dependencies = [
- "ansi_term 0.12.1",
- "atty",
- "chrono",
- "color-eyre",
- "csv",
- "env_logger",
- "eyre",
- "log",
- "rust_decimal",
- "structopt",
- "strum",
- "strum_macros",
- "thiserror",
 ]
 
 [[package]]

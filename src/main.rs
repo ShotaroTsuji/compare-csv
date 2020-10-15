@@ -1,6 +1,6 @@
 use structopt::StructOpt;
-use csvdiff::app::App;
-use csvdiff::core::TableComparator;
+use compare_csv::app::App;
+use compare_csv::core::TableComparator;
 use ansi_term::Style;
 use ansi_term::Colour::{Red, Green};
 
