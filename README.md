@@ -16,7 +16,7 @@ The program sees first and fifth columns in this example.
 --target-columns "date:Date,description,account,unit,price:Decimal" \
 --predicate "(date, price) = (date, price)"
     Finished dev [unoptimized + debuginfo] target(s) in 0.05s
-     Running `target/debug/csvdiff --source-file examples/base.csv --source-columns 'date:Date,description,account,unit,price:Decimal' --target-file examples/delta.csv --target-columns 'date:Date,description,account,unit,price:Decimal' --predicate '(date, price) = (date, price)'`
+     Running `target/debug/compare-csv --source-file examples/base.csv --source-columns 'date:Date,description,account,unit,price:Decimal' --target-file examples/delta.csv --target-columns 'date:Date,description,account,unit,price:Decimal' --predicate '(date, price) = (date, price)'`
 # 2020-09-12,-1000
 < 2020-09-12,Lunch,Liabilities:CreditCard,JPY,-1000
 # 2020-09-20,-4500
@@ -34,7 +34,7 @@ You can convert a column value negative when the column type is `Decimal`.
 --target-columns "date:Date,description,price:Decimal" \ 
 --predicate "(date, -price) = (date, price)"
     Finished dev [unoptimized + debuginfo] target(s) in 0.05s
-     Running `target/debug/csvdiff --source-file examples/postings.csv --source-columns 'date:Date,description,account,unit,price:Decimal' --target-file examples/history.csv --target-columns 'date:Date,description,price:Decimal' --predicate '(date, -price) = (date, price)'`
+     Running `target/debug/compare-csv --source-file examples/postings.csv --source-columns 'date:Date,description,account,unit,price:Decimal' --target-file examples/history.csv --target-columns 'date:Date,description,price:Decimal' --predicate '(date, -price) = (date, price)'`
 # 2020-09-11,100
 < 2020-09-11,Vending Machine,Liabilities:CreditCard,JPY,-100
 < 2020-09-11,Vending Machine,Liabilities:CreditCard,JPY,-100
